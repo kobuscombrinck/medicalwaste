@@ -1,0 +1,26 @@
+Required Dependencies:
+
+npm install express mongoose multer @google-cloud/storage uuid dotenv cors helmet express-rate-limit
+
+Dependencies and their purposes:
+- express: Web framework
+- mongoose: MongoDB ODM
+- multer: File upload handling
+- @google-cloud/storage: Google Cloud Storage client
+- uuid: Unique ID generation
+- dotenv: Environment variable management
+- cors: Cross-origin resource sharing
+- helmet: Security headers
+- express-rate-limit: Rate limiting
+
+Dev Dependencies:
+npm install --save-dev nodemon jest supertest
+
+Environment Variables Required:
+- NODE_ENV=development
+- PORT=5000
+- MONGODB_URI=your_mongodb_connection_string
+- GCP_PROJECT_ID=your_gcp_project_id
+- GCP_BUCKET_NAME=your_bucket_name
+- JWT_SECRET=your_jwt_secret
+- JWT_EXPIRES_IN=90d
